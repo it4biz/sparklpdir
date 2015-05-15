@@ -1,0 +1,49 @@
+${Internal.Transformation.Filename.Directory}\test.csv
+
+/Applications/Pentaho/5.3.0/biserver-ce-5.3.0.0-213/biserver-ce/pentaho-solutions/system/SparklPDIR/endpoints/kettle/admin/test1.r
+
+/Applications/Pentaho/5.3.0/biserver-ce-5.3.0.0-213/biserver-ce/pentaho-solutions/system/sparklpdir/endpoints/kettle/test1.r
+
+sudo -u caiomsouza R_HOME=$R_HOME ./start-pentaho.sh
+
+Error:
+
+2015/05/15 02:05:48 - Get File Names.0 - Finished processing (I=0, O=0, R=2, W=4, U=0, E=0)
+R_HOME is not set. Please set all required environment variables before running this program.
+2015/05/15 02:05:48 - exclude CPK private files.0 - Finished processing (I=0, O=0, R=4, W=4, U=0, E=0)
+2015/05/15 02:05:48 - Execute R Script.0 - Unable to start R
+2015/05/15 02:05:48 - Execute R Script.0 - org.pentaho.di.core.exception.KettleException: 
+2015/05/15 02:05:48 - Execute R Script.0 - Error by executing R script: [1.0, 2.0, null, null, null, null, null, null, null, null, null, null]
+2015/05/15 02:05:48 - Execute R Script.0 - Cannot load R
+2015/05/15 02:05:48 - Execute R Script.0 - 	at de.dekarlab.pentahor.plugin.PRCalc.processRow(PRCalc.java:251)
+2015/05/15 02:05:48 - Execute R Script.0 - 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+2015/05/15 02:05:48 - Execute R Script.0 - 	at java.lang.Thread.run(Thread.java:745)
+2015/05/15 02:05:48 - Execute R Script.0 - Caused by: java.lang.Exception: Cannot load R
+2015/05/15 02:05:48 - Execute R Script.0 - 	at de.dekarlab.pentahor.RRunner.initREngine(RRunner.java:293)
+2015/05/15 02:05:48 - Execute R Script.0 - 	at de.dekarlab.pentahor.RRunner.getInstance(RRunner.java:109)
+2015/05/15 02:05:48 - Execute R Script.0 - 	at de.dekarlab.pentahor.RRunner.getInstance(RRunner.java:91)
+2015/05/15 02:05:48 - Execute R Script.0 - 	at de.dekarlab.pentahor.plugin.PRCalc.runR(PRCalc.java:79)
+2015/05/15 02:05:48 - Execute R Script.0 - 	at de.dekarlab.pentahor.plugin.PRCalc.processRow(PRCalc.java:239)
+2015/05/15 02:05:48 - Switch / Case.0 - Finished processing (I=0, O=0, R=4, W=4, U=0, E=0)
+2015/05/15 02:05:48 - Execute R Script.0 - 	... 2 more
+2015/05/15 02:05:48 - Execute R Script.0 - ERROR (version 5.3.0.0-213, build 1 from 2015-02-02_12-17-08 by buildguy) : Unexpected error
+2015/05/15 02:05:48 - Execute R Script.0 - ERROR (version 5.3.0.0-213, build 1 from 2015-02-02_12-17-08 by buildguy) : org.pentaho.di.core.exception.KettleException: 
+2015/05/15 02:05:48 - Execute R Script.0 - Error by executing R script: [1.0, 2.0, null, null, null, null, null, null, null, null, null, null]
+2015/05/15 02:05:48 - Execute R Script.0 - Cannot load R
+2015/05/15 02:05:48 - Execute R Script.0 - 
+2015/05/15 02:05:48 - Execute R Script.0 - 	at de.dekarlab.pentahor.plugin.PRCalc.processRow(PRCalc.java:251)
+2015/05/15 02:05:48 - Execute R Script.0 - 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+2015/05/15 02:05:48 - Execute R Script.0 - 	at java.lang.Thread.run(Thread.java:745)
+2015/05/15 02:05:48 - Execute R Script.0 - Caused by: java.lang.Exception: Cannot load R
+2015/05/15 02:05:48 - Execute R Script.0 - 	at de.dekarlab.pentahor.RRunner.initREngine(RRunner.java:293)
+2015/05/15 02:05:48 - Execute R Script.0 - 	at de.dekarlab.pentahor.RRunner.getInstance(RRunner.java:109)
+2015/05/15 02:05:48 - Execute R Script.0 - 	at de.dekarlab.pentahor.RRunner.getInstance(RRunner.java:91)
+2015/05/15 02:05:48 - Execute R Script.0 - 	at de.dekarlab.pentahor.plugin.PRCalc.runR(PRCalc.java:79)
+2015/05/15 02:05:48 - Execute R Script.0 - 	at de.dekarlab.pentahor.plugin.PRCalc.processRow(PRCalc.java:239)
+2015/05/15 02:05:48 - Execute R Script.0 - 	... 2 more
+2015/05/15 02:05:48 - Execute R Script.0 - child index = 1, logging object : org.pentaho.di.core.logging.LoggingObject@d262195 parent=dc56d196-7c3c-4381-951d-5e8c319f835e
+2015/05/15 02:05:48 - Execute R Script.0 - Finished processing (I=0, O=0, R=1, W=0, U=0, E=1)
+2015/05/15 02:05:48 - RTest - Transformation detected one or more steps with errors.
+2015/05/15 02:05:48 - RTest - Transformation is killing the other steps!
+
+
